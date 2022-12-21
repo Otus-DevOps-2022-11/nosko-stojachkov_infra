@@ -37,5 +37,5 @@ yc compute instance create \
   --core-fraction=20 \
   --create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=14GB \
   --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
-  --metadata-from-file user-data=~/user-data.yaml \
+  --metadata-from-file user-data=./user-data.yaml \
   --metadata serial-port-enable=1
