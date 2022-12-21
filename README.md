@@ -3,7 +3,7 @@ nosko-stojachkov Infra repository
 
 bastion_IP = 158.160.52.124
 someinternalhost_IP = 10.128.0.17
-testapp_IP = 58.160.52.124
+testapp_IP = 158.160.52.124
 testapp_port = 9292
 
 
