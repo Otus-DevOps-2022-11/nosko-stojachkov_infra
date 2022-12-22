@@ -3,7 +3,7 @@ nosko-stojachkov Infra repository
 
 bastion_IP = 158.160.52.124
 someinternalhost_IP = 10.128.0.17
-testapp_IP = 158.160.54.193
+testapp_IP = 158.160.55.29
 testapp_port = 9292
 
 
@@ -30,6 +30,7 @@ proxyjump bastion
 ```
 
 Создание инстанса
+```
 yc compute instance create \
   --name reddit-app \
   --hostname reddit-app \
@@ -39,3 +40,4 @@ yc compute instance create \
   --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
   --metadata-from-file user-data=./user-data.yaml \
   --metadata serial-port-enable=1
+```
