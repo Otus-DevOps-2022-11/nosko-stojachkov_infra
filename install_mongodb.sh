@@ -10,6 +10,6 @@ sudo apt-get install -y mongodb-org
 sleep 60
 cat /lib/systemd/system/mongod.service
 sleep 60
-sudo systemctl start mongod
-sudo systemctl enable mongod
-sudo /usr/bin/mongod --config /etc/mongod.conf
+sudo /bin/systemctl start mongod
+sudo /bin/systemctl enable mongod
+#sudo /usr/bin/mongod --config /etc/mongod.conf
