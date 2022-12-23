@@ -1,7 +1,7 @@
 {
-	"folder_id": "b1givf82degtu73bkugu",
-	"service_account_key_file": "/mnt/c/Users/vaabelov/Documents/otus_lessons/key.json",
-	"source_image_id": "fd8hpqvd8id5l4gb74t2",
+	"folder_id": "b1givf82dretu73bkugu",
+	"service_account_key_file": "./key.json",
+	"source_image_id": "fd8hprew8id5l4gb74t2",
 	"disk_type": "hdd",
 	"disk_size_gb": "10"
 
