@@ -7,3 +7,4 @@ subnet_id                = "e9bem33uhju28r5i7pnu"
 service_account_key_file = "key.json"
 instance_count           = "2"
 private_key_path         = "ubuntu"
+
