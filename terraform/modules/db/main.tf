@@ -1,11 +1,3 @@
-terraform {
-  required_providers {
-    yandex = {
-      source = "yandex-cloud/yandex"
-    }
-  }
-  required_version = ">= 0.13"
-}
 resource "yandex_compute_instance" "db" {
   name = "reddit-db"
   labels = {
@@ -14,7 +6,7 @@ resource "yandex_compute_instance" "db" {
 
   resources {
     cores  = 2
-    memory = 2
+    memory = 4
   }
 
   boot_disk {
