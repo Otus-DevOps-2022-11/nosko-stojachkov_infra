@@ -30,23 +30,16 @@ variable "subnet_id" {
 variable "service_account_key_file" {
   description = "key.json"
 }
-variable "app_disk_image" {
-  description = "Disk image for reddit app"
-  default     = "reddit-app-base"
-}
 variable "db_disk_image" {
   description = "Disk image for reddit db"
   default     = "reddit-db-base"
 }
+
+variable "app_disk_image" {
+  description = "Disk image for reddit db"
+  default     = "reddit-db-base"
+}
 variable "access_key" {
-  description = "access_key"
-  default     = "access_key"
 }
 variable "secret_key" {
-  description = "secret_key"
-  default     = "secret_key"
-}
-variable "bucket_name" {
-  description = "bucket_name"
-  default     = "bucket_name"
 }
