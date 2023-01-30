@@ -1,4 +1,3 @@
----
 - name: Configure App
   hosts: app
   become: true
@@ -24,9 +23,10 @@
         group: appuser
 
     - name: enable puma
-      systemd: name=puma enabled=yes
+      systemd: name=puma 
+      enabled: yes
 
   handlers:
   - name: reload puma
-    systemd: name=puma state=restarted
-    
+    systemd: name=puma
+    state: restarted
