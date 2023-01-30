@@ -21,6 +21,7 @@ resource "yandex_compute_instance" "app" {
   }
 
   metadata = {
-    ssh-keys = "appuser:${file(var.public_key_path)}"
+    user-data = "#cloud-config\nusers:\n  - name: appuser\n    groups: sudo\n    shell: /bin/bash\n    sudo: ['ALL=(ALL) NOPASSWD:ALL']\n    ssh-authorized-keys:\n      - ${file(var.public_key_path)}"
   }
+
 }

@@ -1,6 +1,6 @@
 {
 	"folder_id": "b1givf82degtu73bkugu",
-	"service_account_key_file": "./key.json",
+	"service_account_key_file": "./packer/key.json",
 	"source_image_id": "fd8hpqvd8id5l4gb74t2",
 	"disk_type": "network-hdd",
 	"disk_size_gb": "10"
