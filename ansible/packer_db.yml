@@ -17,10 +17,8 @@
     apt:
       name: mongodb-org
       state: present
-      allow_unauthenticated: yes
 
   - name: Configure service supervisor
     systemd:
       name: mongod
       enabled: yes
-      
