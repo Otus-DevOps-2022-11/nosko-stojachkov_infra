@@ -54,3 +54,9 @@ yc compute instance create \
 Адрес балансировщика: http://130.193.36.80:9292/
 ```
 
+### HW-10
+❯ ansible app -m command -a 'rm -rf ~/reddit'
+[WARNING]: Consider using the file module with state=absent rather than running 'rm'.  If you need to use command because file is insufficient you can add 'warn: false' to
+this command task or set 'command_warnings=False' in ansible.cfg to get rid of this message.
+appserver | CHANGED | rc=0 >>
+
