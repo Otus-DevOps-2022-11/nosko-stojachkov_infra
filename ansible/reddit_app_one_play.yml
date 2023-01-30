@@ -29,7 +29,7 @@
     - name: Add config for DB connection
       template:
         src: templates/db_config.j2
-        dest: /home/appuser/db_config
+        dest: /home/ubuntu/db_config
       tags: app-tag
     - name: enable puma
       become: true
@@ -38,14 +38,14 @@
     - name: Fetch the latest version of application code
       git:
         repo: 'https://github.com/express42/reddit.git'
-        dest: /home/appuser/reddit
+        dest: /home/ubuntu/reddit
         version: monolith
       tags: deploy-tag
       notify: reload puma
     - name: Bundle install
       bundler:
         state: present
-        chdir: /home/appuser/reddit
+        chdir: /home/ubuntu/reddit
       tags: deploy-tag
 
   handlers:
