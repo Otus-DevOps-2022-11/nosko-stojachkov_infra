@@ -1,3 +1,4 @@
+---
 - name: Configure MongoDB
   hosts: db
   become: true
@@ -14,4 +15,3 @@
   handlers:
   - name: restart mongod
     service: name=mongod state=restarted
-    
