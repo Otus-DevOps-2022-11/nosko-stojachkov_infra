@@ -5,7 +5,7 @@
   tasks:
   - name: Install ruby and rubygems and required packages
     apt: "name={{ item }} state=present"
-      update_cache: yes
+    update_cache: yes
     with_items:
       - ruby-full
       - ruby-bundler
@@ -14,4 +14,4 @@
     apt:
       name: git
       state: present
-      update_cache: yes
+    update_cache: yes
