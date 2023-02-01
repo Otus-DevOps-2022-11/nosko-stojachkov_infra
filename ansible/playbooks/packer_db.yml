@@ -1,3 +1,4 @@
+---
 - name: install db
   hosts: all
   become: true
