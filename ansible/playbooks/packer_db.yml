@@ -1,9 +1,9 @@
 ---
 - name: Configure MongoDB
-  hosts: db
+  hosts: all
   become: true
   roles:
-  - db
+    - db
 
 # - name: install db
 #   hosts: all

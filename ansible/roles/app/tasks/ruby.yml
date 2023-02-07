@@ -6,3 +6,10 @@
     - ruby-bundler
     - build-essential
   tags: ruby
+
+- name: Install git
+  apt:
+    name: git
+    state: present
+    update_cache: yes
+  tags: ruby
